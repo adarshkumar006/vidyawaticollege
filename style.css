@@ -4899,6 +4899,343 @@ html {
     }
 }
 
+/* Map */
+
+/* ===== COLLEGE LOCATION SECTION ===== */
+
+.college-location {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #fffdf5, #ecfdf5);
+    scroll-margin-top: 100px;
+}
+
+.location-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading */
+
+.location-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    background: #d1fae5;
+    color: #0d9488;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.location-heading h2 {
+    margin: 18px 0 13px;
+    color: #174b45;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 800;
+}
+
+.location-heading h2 span {
+    color: #0d9488;
+}
+
+.location-heading p {
+    color: #526963;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Main Layout */
+
+.location-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Map Card */
+
+.location-map-card {
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #d9f3e7;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(13, 148, 136, 0.08);
+}
+
+.location-map-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 23px 25px;
+}
+
+.map-header-icon {
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #d1fae5;
+    color: #0d9488;
+    font-size: 23px;
+}
+
+.location-map-header h3 {
+    color: #174b45;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+.location-map-header p {
+    color: #71817b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Map Frame */
+
+.location-map-frame {
+    width: 100%;
+    height: 430px;
+    background: #eaf8f1;
+}
+
+.location-map-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Map Footer */
+
+.map-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 18px 23px;
+}
+
+.map-footer > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #526963;
+    font-size: 13px;
+}
+
+.map-footer > span i {
+    color: #0d9488;
+}
+
+.map-footer > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0d9488;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.map-footer > a:hover {
+    color: #087f75;
+}
+
+/* Location Information */
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.location-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 23px 20px;
+    background: #fff;
+    border: 1px solid #d9f3e7;
+    border-radius: 17px;
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.05);
+    transition: 0.3s ease;
+}
+
+.location-info-card:hover {
+    border-color: #a7f3d0;
+    transform: translateY(-3px);
+}
+
+.location-info-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #d1fae5;
+    color: #0d9488;
+    font-size: 19px;
+}
+
+.location-info-card h3 {
+    color: #174b45;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 2px 0 9px;
+}
+
+.location-info-card p {
+    color: #526963;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.location-info-card strong {
+    display: inline-block;
+    color: #0d9488;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.location-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #0d9488;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    margin-top: 10px;
+    overflow-wrap: anywhere;
+}
+
+/* Directions Button */
+
+.location-directions-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 18px;
+    margin-top: auto;
+    background: #0d9488;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.location-directions-btn:hover {
+    background: #087f75;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(13, 148, 136, 0.18);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 900px) {
+    .location-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .location-map-frame {
+        height: 380px;
+    }
+
+    .location-details {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .location-directions-btn {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .college-location {
+        padding: 55px 15px;
+    }
+
+    .location-heading {
+        margin-bottom: 30px;
+    }
+
+    .location-heading p {
+        font-size: 14px;
+    }
+
+    .location-map-card {
+        border-radius: 16px;
+    }
+
+    .location-map-header {
+        padding: 19px 16px;
+        align-items: flex-start;
+    }
+
+    .location-map-header h3 {
+        font-size: 16px;
+    }
+
+    .location-map-frame {
+        height: 300px;
+    }
+
+    .map-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 17px;
+    }
+
+    .location-details {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .location-info-card {
+        padding: 20px 17px;
+    }
+
+    .location-directions-btn {
+        grid-column: auto;
+        font-size: 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .location-info-card,
+    .location-directions-btn {
+        transition: none;
+    }
+}
+
 
 /* ===== COLLEGE FOOTER ===== */
 
