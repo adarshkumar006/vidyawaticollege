@@ -6407,7 +6407,8 @@ html[data-theme="dark"] :is(
   .admission-section,
   .facilities-section,
   .college-gallery,
-  .contact-section
+  .contact-section,
+  .college-location
 ) {
   color: var(--theme-text);
   background: var(--theme-page);
@@ -6441,7 +6442,10 @@ html[data-theme="dark"] :is(
   .contact-heading h2,
   .contact-info-heading h3,
   .contact-info-item h4,
-  .form-heading h3
+  .form-heading h3,
+  .location-heading h2,
+  .location-map-header h3,
+  .location-info-card h3
 ) {
   color: var(--theme-heading);
 }
@@ -6474,7 +6478,10 @@ html[data-theme="dark"] :is(
   .contact-heading p,
   .contact-info-heading p,
   .contact-info-item p,
-  .form-heading p
+  .form-heading p,
+  .location-heading p,
+  .location-map-header p,
+  .location-info-card p
 ) {
   color: var(--theme-muted);
 }
@@ -6496,7 +6503,9 @@ html[data-theme="dark"] :is(
   .gallery-filter,
   .gallery-bottom,
   .contact-info-item,
-  .contact-form-card
+  .contact-form-card,
+  .location-map-card,
+  .location-info-card
 ) {
   color: var(--theme-text);
   background-color: var(--theme-surface);
@@ -6528,7 +6537,8 @@ html[data-theme="dark"] :is(
   .admission-tag,
   .facilities-tag,
   .gallery-tag,
-  .contact-tag
+  .contact-tag,
+  .location-tag
 ) {
   color: #99f6e4;
   background: #153633;
@@ -6859,7 +6869,8 @@ html[data-theme="dark"] :is(
   .admission-section,
   .facilities-section,
   .college-gallery,
-  .contact-section
+  .contact-section,
+  .college-location
 ) :is(h1, h2, h3, h4) {
   color: var(--theme-heading);
 }
@@ -6872,7 +6883,8 @@ html[data-theme="dark"] :is(
   .admission-section,
   .facilities-section,
   .college-gallery,
-  .contact-section
+  .contact-section,
+  .college-location
 ) :is(p, li, label) {
   color: var(--theme-muted);
 }
@@ -6885,7 +6897,8 @@ html[data-theme="dark"] :is(
   .admission-heading h2 span,
   .facilities-heading h2 span,
   .gallery-heading h2 span,
-  .contact-heading h2 span
+  .contact-heading h2 span,
+  .location-heading h2 span
 ) {
   color: #5eead4;
 }
@@ -7003,4 +7016,53 @@ html[data-theme="dark"] .footer-highlight > a:hover {
 
 html[data-theme="dark"] .footer-bottom {
   border-color: var(--theme-border);
+}
+
+html[data-theme="dark"] .location-map-card,
+html[data-theme="dark"] .location-info-card {
+  background: var(--theme-surface);
+  border-color: var(--theme-border);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .map-header-icon,
+html[data-theme="dark"] .location-info-icon {
+  color: #5eead4;
+  background: #153633;
+}
+
+html[data-theme="dark"] .location-map-header p,
+html[data-theme="dark"] .map-footer > span,
+html[data-theme="dark"] .location-info-card p {
+  color: var(--theme-muted);
+}
+
+html[data-theme="dark"] .map-footer > span i,
+html[data-theme="dark"] .map-footer > a,
+html[data-theme="dark"] .location-info-card strong,
+html[data-theme="dark"] .location-phone {
+  color: #5eead4;
+}
+
+html[data-theme="dark"] .map-footer > a:hover,
+html[data-theme="dark"] .location-phone:hover {
+  color: #99f6e4;
+}
+
+html[data-theme="dark"] .location-map-frame {
+  background: #0b1220;
+}
+
+html[data-theme="dark"] .location-info-card:hover {
+  border-color: #2dd4bf;
+}
+
+html[data-theme="dark"] .location-directions-btn {
+  color: #081512;
+  background: #5eead4;
+}
+
+html[data-theme="dark"] .location-directions-btn:hover {
+  color: #081512;
+  background: #99f6e4;
 }
