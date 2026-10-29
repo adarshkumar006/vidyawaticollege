@@ -507,24 +507,25 @@ html {
 .navbar-container {
     width: 94%;
     max-width: 1450px;
-    min-height: 54px;
+    min-height: 58px;
     margin: auto;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
 }
 
 .navbar-menu {
+    flex: 1;
     display: flex;
     align-items: center;
-    gap: 3px;
+    justify-content: center;
+    gap: 0;
 }
 
 .nav-link {
-    min-height: 54px;
-    padding: 0 12px;
+    min-height: 58px;
+    padding: 0 8px;
 
     display: flex;
     align-items: center;
@@ -611,14 +612,14 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-left: 300px;
-    padding: 10px 15px;
-    border-radius: 6px;
+    gap: 6px;
+    padding: 9px 11px;
+    border: 1px solid #0D9488;
+    border-radius: 8px;
     background: #0D9488;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     white-space: nowrap;
     transition: all 0.25s ease;
@@ -626,7 +627,24 @@ html {
 
 .navbar-apply-btn:hover {
     background: #0F766E;
+    border-color: #0F766E;
     box-shadow: 0 4px 10px rgba(13, 148, 136, 0.18);
+}
+
+.navbar-apply-btn--secondary {
+    color: #0F766E;
+    background: #ECFDF5;
+}
+
+.navbar-apply-btn--secondary:hover {
+    color: #FFFFFF;
+}
+
+.navbar-actions {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Hide Mobile Button on Desktop */
@@ -653,16 +671,16 @@ html {
    TABLET & MOBILE NAVBAR
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .navbar-container {
         position: relative;
-        min-height: 52px;
-        flex-wrap: wrap;
+        min-height: 58px;
         padding: 7px 0;
     }
 
     .menu-toggle {
         display: inline-flex;
+        flex-shrink: 0;
     }
 
     .navbar-menu {
@@ -676,7 +694,7 @@ html {
         align-items: stretch;
         gap: 2px;
 
-        max-height: 75vh;
+        max-height: calc(100vh - 85px);
         overflow-y: auto;
         padding: 8px;
         background: #FFFFFF;
@@ -724,28 +742,59 @@ html {
         padding: 10px;
     }
 
-    .navbar-apply-btn {
+    .navbar-actions {
         margin-left: auto;
     }
 }
 
 /* Small Mobile */
 
-@media (max-width: 380px) {
+@media (max-width: 460px) {
     .navbar-container {
-        width: 94%;
-        gap: 7px;
+        gap: 6px;
     }
 
     .menu-toggle {
-        padding: 8px 9px;
-        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .navbar-actions {
+        gap: 5px;
     }
 
     .navbar-apply-btn {
-        padding: 9px 10px;
-        font-size: 11px;
-        gap: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .navbar-button-label,
+    .navbar-button-arrow {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 340px) {
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-toggle span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
     }
 }
 
